@@ -1,20 +1,17 @@
-
-/*--------------------------------*/
-/*              Fots              */
-/*--------------------------------*/
+/*===============================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-/*--------------------------------*/
+/*===============================*/
 /*              Fots              */
-/*--------------------------------*/
+/*===============================*/
 
 
-/*-----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
 
 
-/*--------------------------------*/
+/*===============================*/
 /*           Variables            */
-/*--------------------------------*/
+/*===============================*/
 :root {
   --main-color: #eaa023;
   --dark: #0c1023;
@@ -25,17 +22,17 @@
   --cursive-font: font-family: 'Dancing Script', cursive;
   scroll-behavior: smooth;
 }
-/*--------------------------------*/
+/*===============================*/
 /*           Variables            */
-/*--------------------------------*/
+/*===============================*/
 
 
-/*-----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
 
 
-/*--------------------------------*/
+/*===============================*/
 /*         General Styles         */
-/*--------------------------------*/
+/*===============================*/
 * {
   margin: 0;
   padding: 0;
@@ -54,6 +51,7 @@ body {
   -webkit-top-highlight-color: transparent;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
+  background-color: red;
 }
 
 img {
@@ -86,21 +84,54 @@ ul {
 .align-items-center {
   align-items: center;
 }
-/*--------------------------------*/
+/*===============================*/
 /*         General Styles         */
-/*--------------------------------*/
+/*===============================*/
 
 
-/*-----------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
 
 
-/*--------------------------------*/
+/*===============================*/
 /*         Header Styles         */
-/*--------------------------------*/
+/*===============================*/
 header {
   padding: 12px 0;
-  background-color: var( --dark-light );
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
 }
+
+header::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var( --dark-light );
+  box-shadow: var( --shadow );
+  z-index: -1;
+  transition: transform 0.5s ease;
+  transform: translateY( -100% );
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var( --dark-light );
+  box-shadow: var( --shadow );
+  z-index: -1;
+  transition: transform 0.5s ease;
+  transform: translateY( -100% );
+}
+
 header .logo {
   min-height: 34px;
   display: flex;
@@ -136,7 +167,7 @@ header .nav-toggler span {
   position: relative;
 }
 
-header .nav-toggler.active {
+header .nav-toggler.active span {
   background-color: transparent;  
   transition: background-color 0.5s ease;
 }
@@ -153,17 +184,23 @@ header .nav-toggler span::after {
   width: 100%;
   background-color: var( --white );
 }
-
+ 
 header .nav-toggler span::before {
   transform: translateY( -8px );
 }
 
-header .nav-toggler span::before {
-
+header .nav-toggler.active span::before {
+  transform: rotate( 45deg );
+  transition: transform 0.5s ease;
 }
 
 header .nav-toggler span::after {
   transform: translateY( 8px );
+}
+
+header .nav-toggler.active span::after {
+  transform: rotate( -45deg );
+  transition: transform 0.5s ease;
 }
 
 header nav {
@@ -196,11 +233,9 @@ header nav ul li a {
 header nav ul li a:hover {
   color: var( --main-color );
 }
-/*--------------------------------*/
+/*===============================*/
 /*         Header Styles         */
-/*--------------------------------*/
+/*===============================*/
 
 
-/*-----------------------------------------------------------------------------------------------------------*/
-
-
+/*-----------------------------------------------------------------------------------*/
