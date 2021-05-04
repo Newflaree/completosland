@@ -18,11 +18,14 @@ document.addEventListener( 'click', ( e ) => {
 });
 
 /* Sticky Header */
-window.addEventListener( 'scroll', () => {
+const stickyHeader = () => {
   ( pageYOffset > 60 ) 
     ? document.querySelector( 'header' ).classList.add( 'sticky' )
     : document.querySelector( 'header' ).classList.remove( 'sticky' );
-});
+}
+
+window.addEventListener( 'scroll', stickyHeader );
+/* Sticky Header */
 /*--------------------------------------
             Toggler Navbar 
 --------------------------------------*/
