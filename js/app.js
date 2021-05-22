@@ -1,3 +1,20 @@
+window.addEventListener( 'load', function() {
+  /* Page Loader*/
+  document.querySelector( '.page-loader' ).classList.add( 'fade-out' );
+  setTimeout( () => {
+    document.querySelector( '.page-loader' ).style.display = 'none';
+  }, 600);
+  /* Page Loader*/
+
+  /* Animation on scroll*/
+  AOS.init();
+  /* Animation on scroll*/
+});
+
+
+/*-----------------------------------------------------------------------------------------*/
+
+
 /*--------------------------------------
             Toggler Navbar 
 --------------------------------------*/
@@ -51,6 +68,10 @@ const activeDataTarget = ( e ) => {
     const menuSection = document.querySelector( '.menu-section' );
     menuSection.querySelector( '.menu-tab-content.active' ).classList.remove( 'active' );
     menuSection.querySelector( target ).classList.add( 'active' );
+
+    /* Animation on scroll*/
+    AOS.init();
+    /* Animation on scroll*/
   }
 }
 

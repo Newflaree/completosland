@@ -11,6 +11,18 @@
   <body>
 
     <!-- =====================================
+                Start Page Loader
+    =======================================-->
+    <div class='page-loader'></div>
+    <!-- =====================================
+                 End Page Loader
+    =======================================-->
+
+
+    <!---------------------------------------------------------------------------->
+
+
+    <!-- =====================================
                    Start Header
     =======================================-->
     <header>
@@ -36,7 +48,7 @@
               <li class='nav-item'><a href="#about">Sobre nosotros</a></li>
               <li class='nav-item'><a href="#our-menu">Nuestro Menú</a></li>
               <li class='nav-item'><a href="#team">Equipo</a></li>
-              <li class='nav-item'><a href="#contact">Contáctanos</a></li>
+              <li class='nav-item'><a href="#footer">Contáctanos</a></li>
             </ul>
           </nav>
           <!-- Navbar -->
@@ -59,7 +71,7 @@
       <div class='home-bg'></div>
       <div class='container'>
         <div class='row min-vh-100 align-items-center'>
-          <div class='home-text'>
+          <div class='home-text' data-aos='fade-up' data-aos-duration='1000'>
             <h1>Completo's land</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -86,20 +98,13 @@
 
         <div class='row'>
           <div class='section-title'>
-            <h2 data-title='nuestra historia'>sobre nosotros</h2>
+            <h2 data-title='nuestra historia' data-aos="fade-up">sobre nosotros</h2>
           </div>
         </div>
 
         <div class='row'>
-          <div class='about-text'>
+          <div class='about-text' data-aos="fade-right">
             <h3>Bienvenidos a Completo's land</h3>    
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet 
-              orci imperdiet, efficitur quam vitae, tempor neque. Cras nec venenatis dolor, 
-              in aliquam enim. Maecenas et nulla felis. Morbi pulvinar ante in turpis condimentum, 
-              quis rutrum nisl laoreet. Vivamus neque nibh, venenatis sit amet vulputate sed, 
-              lobortis id urna.
-            </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet 
               orci imperdiet, efficitur quam vitae, tempor neque. Cras nec venenatis dolor, 
@@ -109,7 +114,7 @@
             </p>
             <a href='#our-menu' class='btn btn-default'>revisa nuestro menú</a>
           </div>
-          <div class='about-img'>
+          <div class='about-img' data-aos="fade-left">
             <div class='img-box'>
               <h3>Porque nos encantan los completos...</h3>
               <img src='img/about-img.jpg' alt='about img'>
@@ -134,24 +139,23 @@
       <div class='container'>
 
         <div class='row'>
-          <div class='section-title'>
+          <div class='section-title' data-aos="fade-up">
             <h2 data-title='¿Qué se te antoja?'>nuestro menú</h2>
           </div>
         </div>
 
         <div class='row'>
-          <div class='menu-tabs'>
+          <div class='menu-tabs' data-aos="fade-up">
             <button type='button' class='menu-tab-item active' data-target='#hotdogs'>completos</button>
-            <button type='button' class='menu-tab-item' data-target='#fries'>papas fritas</button>
+            <button type='button' class='menu-tab-item' data-target='#fries'>aperitivos</button>
             <button type='button' class='menu-tab-item' data-target='#sodas'>gaseosas</button>
-            <button type='button' class='menu-tab-item' data-target='#beers'>cervezas</button>
             <button type='button' class='menu-tab-item' data-target=''></button>
           </div>
         </div>
 
         <div class='row menu-tab-content active' id='hotdogs'>
           <!-- menu item-->
-          <div class='menu-item'>
+          <div class='menu-item' data-aos="fade-up-right">
             <div class='menu-item-title'>
               <img src='img/menu/1.jpg' alt='menu item thumbnail'>
               <h3>Completos</h3>
@@ -162,7 +166,7 @@
           </div>
           <!-- menu item-->
           <!-- menu item-->
-          <div class='menu-item'>
+          <div class='menu-item' data-aos="fade-up-left">
             <div class='menu-item-title'>
               <img src='img/menu/1.jpg' alt='menu item thumbnail'>
               <h3>completos</h3>
@@ -173,7 +177,7 @@
           </div>
           <!-- menu item-->
           <!-- menu item-->
-          <div class='menu-item'>
+          <div class='menu-item' data-aos="fade-up-right">
             <div class='menu-item-title'>
               <img src='img/menu/1.jpg' alt='menu item thumbnail'>
               <h3>completos</h3>
@@ -184,7 +188,7 @@
           </div>
           <!-- menu item-->
           <!-- menu item-->
-          <div class='menu-item'>
+          <div class='menu-item' data-aos="fade-up-left">
             <div class='menu-item-title'>
               <img src='img/menu/1.jpg' alt='menu item thumbnail'>
               <h3>completos</h3>
@@ -198,7 +202,7 @@
 
         <div class='row menu-tab-content' id='fries'>
           <!-- menu item-->
-          <div class='menu-item'>
+          <div class='menu-item' data-aos="fade-up-right">
             <div class='menu-item-title'>
               <img src='img/menu/2.jpg' alt='menu item thumbnail'>
               <h3>papas fritas</h3>
@@ -209,7 +213,7 @@
           </div>
           <!-- menu item-->
           <!-- menu item-->
-          <div class='menu-item'>
+          <div class='menu-item' data-aos="fade-up-left">
             <div class='menu-item-title'>
               <img src='img/menu/2.jpg' alt='menu item thumbnail'>
               <h3>papas fritas</h3>
@@ -223,7 +227,7 @@
 
         <div class='row menu-tab-content' id='sodas'>
           <!-- menu item-->
-          <div class='menu-item'>
+          <div class='menu-item' data-aos="fade-up-right">
             <div class='menu-item-title'>
               <img src='img/menu/3.jpg' alt='menu item thumbnail'>
               <h3>gaseosas</h3>
@@ -234,38 +238,13 @@
           </div>
           <!-- menu item-->
           <!-- menu item-->
-          <div class='menu-item'>
+          <div class='menu-item' data-aos="fade-up-left">
             <div class='menu-item-title'>
               <img src='img/menu/3.jpg' alt='menu item thumbnail'>
               <h3>gaseosas</h3>
             </div>
             <div class='menu-item-price'>
               $ 1000
-            </div>
-          </div>
-          <!-- menu item-->
-        </div>
-
-        <div class='row menu-tab-content' id='beers'>
-          <!-- menu item-->
-          <div class='menu-item'>
-            <div class='menu-item-title'>
-              <img src='img/menu/4.jpg' alt='menu item thumbnail'>
-              <h3>cervezas</h3>
-            </div>
-            <div class='menu-item-price'>
-              $ 3500
-            </div>
-          </div>
-          <!-- menu item-->
-          <!-- menu item-->
-          <div class='menu-item'>
-            <div class='menu-item-title'>
-              <img src='img/menu/4.jpg' alt='menu item thumbnail'>
-              <h3>cervezas</h3>
-            </div>
-            <div class='menu-item-price'>
-              $ 3500
             </div>
           </div>
           <!-- menu item-->
@@ -288,15 +267,15 @@
       <div class='container'>
 
         <div class='row'>
-          <div class='section-title'>
+          <div class='section-title' data-aos="fade-up">
             <h2 data-title='equipo'>nuestros expertos</h2>
           </div>
         </div>
 
         <div class='row'>
           <!-- team item -->
-          <div class='team-item'>
-            <img src='img/team/1.jpg' alt='tem item'>
+          <div class='team-item' data-aos="flip-left" data-aos-duration="1000">
+            <img src='img/team/1.jpg' alt='team item'>
             <div class='team-item-info'>
               <h3>Bárbara 'BBQ'</h3>
               <p>jefa de cocina</p>
@@ -304,8 +283,8 @@
           </div>
           <!-- team item -->
           <!-- team item -->
-          <div class='team-item'>
-            <img src='img/team/2.jpg' alt='tem item'>
+          <div class='team-item' data-aos="flip-left" data-aos-duration="1000">
+            <img src='img/team/2.jpg' alt='team item'>
             <div class='team-item-info'>
               <h3>"Dinámico" Sánchez</h3>
               <p>maestro completero</p>
@@ -313,8 +292,8 @@
           </div>
           <!-- team item -->
           <!-- team item -->
-          <div class='team-item'>
-            <img src='img/team/3.jpg' alt='tem item'>
+          <div class='team-item' data-aos="flip-left" data-aos-duration="1000">
+            <img src='img/team/3.jpg' alt='team item'>
             <div class='team-item-info'>
               <h3>Mónica Rogriguez</h3>
               <p>Bartender</p>
@@ -327,6 +306,55 @@
     <!-- =====================================
                  Start Team Section
     =======================================-->
+
+    
+    <!---------------------------------------------------------------------------->
+
+
+    <!-- =====================================
+                Start Footer Section
+    =======================================-->
+    <footer class='footer' id='footer'>
+      <div class='container'>
+
+        <div class='row'>
+          <div class='footer-item' data-aos="fade-up">
+            <h3>Nuestra ubicación</h3>
+            <p>
+              xyz Street, Sector-12, <br> New Delhi 0 000 ****
+            </p>
+          </div> 
+          <div class='footer-item' data-aos="fade-up">
+            <h3>Horario de atención</h3>
+            <p>
+              Lunes a Domingo <br> 11:00 - 21:00
+            </p>
+          </div> 
+          <div class='footer-item' data-aos="fade-up">
+            <h3>Contáctanos</h3>
+            <p>91 9654 293 ***</p>
+            <p>info@gmail.com</p>
+            <div class='social-links'>
+              <a href='#'><i class='fab fa-facebook-f'></i></a>
+              <a href='#'><i class='fab fa-instagram'></i></a>
+              <a href='#'><i class='fab fa-twitter'></i></a>
+              <a href='#'><i class='fab fa-youtube'></i></a>
+            </div>
+          </div> 
+        </div>
+
+        <div class='row'>
+          <div class='copyright'>
+            &copy; 2021 - Diseñado por Newflare
+          </div>
+        </div>
+
+      </div>
+    </footer>
+    <!-- =====================================
+                Start Footer Section
+    =======================================-->
+
 
   <script src="js/aos.js"></script> 
   <script src="js/app.js"></script>
