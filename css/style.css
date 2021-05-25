@@ -299,6 +299,14 @@ header .logo {
   padding: 0 15px;
 }
 
+header .logo a {
+  font-size: 24px;
+  color: var( --main-color );
+  font-family: var( --cursive-font );
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
 header .nav-toggler {
   height: 34px;
   width: 44px;
@@ -619,6 +627,7 @@ header nav ul li a:hover {
 .menu-item-title img {
   max-width: 100px;
   margin-right: 15px;
+  border-radius: 8px;
 }
 
 .menu-item-price {
